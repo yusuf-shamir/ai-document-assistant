@@ -1,0 +1,10 @@
+services:
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      GOOGLE_GENERATIVE_AI_API_KEY: ${GOOGLE_GENERATIVE_AI_API_KEY:-}
+      GOOGLE_GENERATIVE_AI_MODEL: ${GOOGLE_GENERATIVE_AI_MODEL:-gemini-3.5-flash-lite}
+      GOOGLE_GENERATIVE_AI_FALLBACK_MODEL: ${GOOGLE_GENERATIVE_AI_FALLBACK_MODEL:-gemini-3.8-flash}
+    restart: unless-stopped

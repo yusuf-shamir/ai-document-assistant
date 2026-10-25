@@ -1,0 +1,51 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MessageBubble > matches the user message snapshot 1`] = `
+<article
+  class="message message-user"
+>
+  <div
+    aria-hidden="true"
+    class="message-avatar avatar-user"
+  >
+    <svg
+      aria-hidden="true"
+      class="lucide lucide-user-round lucide-user-2"
+      fill="none"
+      height="16"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      viewBox="0 0 24 24"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle
+        cx="12"
+        cy="8"
+        r="5"
+      />
+      <path
+        d="M20 21a8 8 0 0 0-16 0"
+      />
+    </svg>
+  </div>
+  <div
+    class="message-content"
+  >
+    <div
+      class="message-byline"
+    >
+      You
+    </div>
+    <div
+      class="markdown-body"
+    >
+      <p>
+        Summarize the report
+      </p>
+    </div>
+  </div>
+</article>
+`;
